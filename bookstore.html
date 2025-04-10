@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <link rel="stylesheet" href="bookstore.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        .carousel-item img {
+            margin-left: 0;
+            margin-right: 0;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .image-box {
+            width: 100%;
+
+            /* text-align: center; */
+        }
+
+        .slider-container {
+            width: 100%;
+            overflow-x: auto;
+            white-space: nowrap;
+            scrollbar-width: thin;
+            /* Firefox */
+            -ms-overflow-style: none;
+            /* Internet Explorer 10+ */
+        }
+
+        .slider-container::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .slider-container::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+
+        .slider {
+            display: flex;
+            padding: 10px;
+        }
+
+        .box {
+            min-width: 220px;
+            height: 400px;
+            margin: 10px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            overflow: hidden;
+            flex-shrink: 0;
+            /* Prevent shrinking */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd;
+        }
+
+        .box img {
+            width: 100%;
+            height: 75%;
+
+
+            border-bottom: 2px solid #ccc;
+        }
+
+        .content {
+            margin-top: 0px;
+        }
+
+        h5 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(165, 76, 12);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="https://i.pinimg.com/originals/c1/89/ed/c189edec594852afc4deac5aab91f875.png" alt="Logo">
+        <ul>
+            <li><a href="bookstore.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="/login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+            <li><a href="/catolouge.html"><i class="fas fa-book"></i> Catalogue</a></li>
+            <li><a href="/register.html"><i class="fas fa-user-plus"></i> Register</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Welcome to Our Book Lovers Store </h1>
+        <p>All books available</p>
+
+
+    </header>
+
+    <div class="container">
+        <div class="image-box">
+            <img src="https://wallpaperaccess.com/full/922668.jpg" style="width:100%" alt="Image 1">
+        </div>
+    </div>
+
+    <br>
+    <br><br>
+    <br>
+
+    <div class="slider-container">
+        <h1 class="ms-5">Now Trending</h1>
+        <div class="slider">
+            <div class="box">
+                <img class="card-img-top bklazy"
+                    src="https://www.bookswagon.com/productimages/images200/717/9780812976717.jpg" alt="Satanic Verses"
+                    data-src="https://www.bookswagon.com/productimages/images200/717/9780812976717.jpg">
+                <div class="content">
+                    <h5>Satanic Versus</h5>
+                    <h6>Salman Rushide</h6>
+                    <p>Price:4$</p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="card-img-top bklazy"
+                    src="https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/086/9780241252086.jpg"
+                    alt="White Nights"
+                    data-src="https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/086/9780241252086.jpg">
+                <div class="content">
+                    <h5>White Nights</h5>
+                    <h6>Ronald Mayer</h6>
+                    <p>Price:5$</p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="card-img-top bklazy"
+                    src="https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/180/9781250319180.jpg"
+                    alt="Wind and Truth"
+                    data-src="https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/180/9781250319180.jpg">
+                <div class="content">
+                    <h5>Wind and Truth</h5>
+                    <h6>Brandon Sanderson</h6>
+                    <p>Price:12$</p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="card-img-top bklazy"
+                    src="https://www.bookswagon.com/productimages/mainimages/831/9781847941831.jpg" alt="Atomic Habits"
+                    data-src="https://www.bookswagon.com/productimages/mainimages/831/9781847941831.jpg" height="200px"
+                    width="125px">
+                <div class="content">
+                    <h5>Atomic Habits</h5>
+                    <h6>James Clear</h6>
+                    <p>Price:20$</p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="card-img-top bklazy"
+                    src="https://www.bookswagon.com/productimages/images200/593/9780062843593.jpg"
+                    alt="New Rules of War"
+                    data-src="https://www.bookswagon.com/productimages/images200/593/9780062843593.jpg">
+                <div class="content">
+                    <h5>The new rules of war</h5>
+                    <h6>SEan McFate</h6>
+                    <p>Price:1$</p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="card-img-top bklazy"
+                    src="https://www.bookswagon.com/productimages/mainimages/393/9789365693393.jpg"
+                    alt="Too Good To Be True"
+                    data-src="https://www.bookswagon.com/productimages/mainimages/393/9789365693393.jpg" height="200px"
+                    width="125px">
+                <div class="content">
+                    <h5>Too good to be true</h5>
+                    <h6>Prajakta Koli</h6>
+                    <p>Price:26$</p>
+                </div>
+            </div>
+            <div class="box">
+                <img class="card-img-top bklazy"
+                    src="https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/578/9781529935578.jpg"
+                    alt="What's Your Dream?"
+                    data-src="https://d2g9wbak88g7ch.cloudfront.net/productimages/mainimages/578/9781529935578.jpg"
+                    height="200px" width="125px">
+                <div class="content">
+                    <h5>What's your dream?</h5>
+                    <h6>Simon Squibb</h6>
+                    <p>Price:18$</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.bookswagon.com/aboutus" class="text-light">About Us</a></li>
+                        <li><a href="https://www.bookswagon.com/contactus" class="text-light">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Help</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.bookswagon.com/paymenthelp" class="text-light">Payment</a></li>
+                        <li><a href="https://www.bookswagon.com/faq" class="text-light">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <a href="https://www.facebook.com/bookswagoneducationalfacts/" target="_blank">
+                        <i class="fab fa-facebook fa-lg text-light me-2"></i>
+                    </a>
+                    <a href="https://twitter.com/bookswagon_in" target="_blank">
+                        <i class="fab fa-twitter fa-lg text-light me-2"></i>
+                    </a>
+                    <a href="https://www.instagram.com/bookswagon_official/" target="_blank">
+                        <i class="fab fa-instagram fa-lg text-light"></i>
+                    </a>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <p class="mb-0">&copy; 2025 Bookswagon.com. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+
+
+
+
+</body>
+
+</html>

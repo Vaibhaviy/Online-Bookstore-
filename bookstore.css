@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding-top: 3px;
+    text-align: center;
+    height: 160px;
+    font-size: 25px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #260951;
+    padding: 5px 20px;
+}
+
+nav img {
+    width: 120px;
+    height: 70px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul li {
+    display: inline;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+ul li a i {
+    font-size: 18px;
+}
+
+ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+#H1{
+    margin-left: 650px;
+}
+
+.featured-books {
+    text-align: center;
+    margin: 20px;
+}
+
+.book {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.book img {
+    width: 150px;
+    height: 200px;
+    border: 1px solid #ddd;
+}
+
+
